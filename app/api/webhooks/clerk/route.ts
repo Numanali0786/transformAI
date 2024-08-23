@@ -8,7 +8,6 @@ import { Webhook } from "svix";
 import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
 
 export async function POST(req: Request) {
-  console.log('pppppppppppppppppppppppppppppppppp')
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
   
@@ -107,6 +106,7 @@ export async function POST(req: Request) {
   // DELETE
   if (eventType === "user.deleted") {
     const { id } = evt.data;
+    console.log('pppppppppppppppppppppppppppppppppp',id)
     
     const deletedUser = await deleteUser(id!);
     
