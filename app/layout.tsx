@@ -10,7 +10,7 @@ const IBMPlex = IBM_Plex_Sans({ subsets: ["latin"] ,
 });
 
 export const metadata: Metadata = {
-  title: "Canva",
+  title: "GenerateAI",
   description: "AI-powered image generator",
 };
 

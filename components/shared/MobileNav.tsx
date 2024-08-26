@@ -21,8 +21,9 @@ const MobileNav = () => {
     return (
         <header className='header'>
             <Link href={'/'}>
+ 
                 <Image
-                    src='/assets/images/logo-text.svg'
+                    src='/assets/images/transformAI-logo.png'
                     alt="logo"
                     width={180}
                     height={28}
